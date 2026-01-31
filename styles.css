@@ -320,18 +320,27 @@ h1, h2, h3, h4, h5, h6 {
 
 .hero-brand {
     font-family: var(--font-display);
-    font-size: 7rem;
+    font-size: 9rem;
     color: #ffffff;
-    margin-bottom: 16px;
-    text-align: center;
+    margin-bottom: 24px;
+    text-align: left;
     animation: fadeInUp 0.4s ease forwards;
-    text-shadow: 3px 3px 6px rgba(0,0,0,0.3);
-    letter-spacing: 2px;
+    text-shadow: 4px 4px 8px rgba(0,0,0,0.3);
+    letter-spacing: 3px;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+@media (max-width: 1024px) {
+    .hero-brand {
+        font-size: 7rem;
+    }
 }
 
 @media (max-width: 768px) {
     .hero-brand {
         font-size: 5rem;
+        text-align: center;
     }
 }
 
@@ -356,7 +365,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .hero-title {
     font-family: var(--font-display);
-    font-size: clamp(42px, 6vw, 72px);
+    font-size: clamp(32px, 4vw, 48px);
     color: var(--white);
     margin-bottom: 24px;
     line-height: 1.1;
